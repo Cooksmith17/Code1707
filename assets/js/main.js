@@ -36,4 +36,26 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileToggle.classList.remove('is-active');
         }
     });
+
+    // Handle footer link clicks
+    const footerLinks = document.querySelectorAll('.footer__link');
+    const currentPage = window.location.pathname.split('/').pop();
+
+    footerLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            const targetPage = href.split('/').pop();
+
+            // If on about.html and clicking about link, scroll to top
+            if (currentPage === 'about.html' && targetPage === 'about.html') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            // If on contact.html and clicking contact link, scroll to top
+            else if (currentPage === 'contact.html' && targetPage === 'contact.html') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+    });
 });

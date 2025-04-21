@@ -22,38 +22,47 @@
             
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="/" class="header__nav-link">Home</a></li>
-                    <li class="header__nav-item"><a href="/about.html" class="header__nav-link active">About</a></li>
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link active">About</a></li>
                     <li class="header__nav-item header__nav-item--has-dropdown">
-                        <a href="/industries" class="header__nav-link">Industries</a>
+                        <a href="industries.html" class="header__nav-link">Industries</a>
                         <ul class="header__dropdown">
                             <li class="header__dropdown-item">
-                                <a href="/industries/food" class="header__dropdown-link">Food</a>
+                                <a href="#food" class="header__dropdown-link">Food</a>
                             </li>
                             <li class="header__dropdown-item">
-                                <a href="/industries/agriculture" class="header__dropdown-link">Detergents & Soaps</a>
+                                <a href="#detergents" class="header__dropdown-link">Detergents & Soaps</a>
                             </li>
                             <li class="header__dropdown-item">
-                                <a href="/industries/plastic-rubber" class="header__dropdown-link">Plastic & Rubber</a>
+                                <a href="#plastic-rubber" class="header__dropdown-link">Plastic & Rubber</a>
                             </li>
                             <li class="header__dropdown-item">
-                                <a href="/industries/foundries" class="header__dropdown-link">Forges & Foundry</a>
+                                <a href="#foundries" class="header__dropdown-link">Forges & Foundry</a>
                             </li>
                             <li class="header__dropdown-item">
-                                <a href="/industries/agriculture" class="header__dropdown-link">Agriculture & Forestry</a>
+                                <a href="#agriculture" class="header__dropdown-link">Agriculture & Forestry</a>
                             </li>
                             <li class="header__dropdown-item">
-                                <a href="/industries/textile" class="header__dropdown-link">Textile</a>
+                                <a href="#mining" class="header__dropdown-link">Mining</a>
                             </li>
                             <li class="header__dropdown-item">
-                                <a href="/industries/mining" class="header__dropdown-link">Mining</a>
+                                <a href="#medical" class="header__dropdown-link">Medical Waste Disposal</a>
                             </li>
                             <li class="header__dropdown-item">
-                                <a href="/industries/medical" class="header__dropdown-link">Medical Waste Disposal</a>
+                                <a href="#petroleum" class="header__dropdown-link">Petroleum</a>
+                            </li>
+                            <li class="header__dropdown-item">
+                                <a href="#power" class="header__dropdown-link">Power</a>
+                            </li>
+                            <li class="header__dropdown-item">
+                                <a href="#paint" class="header__dropdown-link">Paint</a>
+                            </li>
+                            <li class="header__dropdown-item">
+                                <a href="#construction" class="header__dropdown-link">Construction</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="header__nav-item"><a href="/contact" class="header__nav-link">Contact Us</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -97,7 +106,7 @@
     <section class="feature">
         <div class="feature__container">
             <div class="feature__content">
-                <h2 class="feature__title">We ensure your environmental and industrial goals are achieved with precision, sustainability, and cost-effectiveness.</h2>
+                <h2 class="feature__title" style="margin-bottom: 2rem;">We ensure your environmental and industrial goals are achieved with precision, sustainability, and cost-effectiveness.</h2>
                 <p class="feature__text">At Kwaramba & Chapfunya Engineering, we are passionate about creating a sustainable future for Zimbabwe's industries and communities. With a focus on innovation, environmental stewardship, and economic growth, we strive to deliver solutions that balance progress with responsibility.</p>
             </div>
         </div>
@@ -239,27 +248,25 @@
     <!-- Connect Section -->
     <section class="connect">
         <div class="connect__container">
-            <div class="connect__content">
-                <h2 class="connect__title">Connect with us</h2>
-                <div class="connect__form-wrapper">
-                    <form id="connectForm" onsubmit="return handleFormSubmit(event)" class="connect__form-container">
-                        <div class="connect__form-icon">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.75 6.25L8.33333 9.58333L10 10.8333L11.6667 9.58333L16.25 6.25" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M2.5 5.83334C2.5 4.91667 3.25 4.16667 4.16667 4.16667H15.8333C16.75 4.16667 17.5 4.91667 17.5 5.83334V14.1667C17.5 15.0833 16.75 15.8333 15.8333 15.8333H4.16667C3.25 15.8333 2.5 15.0833 2.5 14.1667V5.83334Z" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <input 
-                            type="email" 
-                            id="connectEmailInput"
-                            placeholder="Schedule a consultation with us"
-                            class="connect__form-input"
-                            required
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                        >
-                        <button type="submit" class="connect__form-button">GET STARTED</button>
-                    </form>
-                </div>
+            <h2 class="connect__title">Connect with us</h2>
+            <div class="connect__form-wrapper">
+                <form id="consultationForm" onsubmit="return handleFormSubmit(event)" class="hero__form-container">
+                    <div class="hero__form-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.75 6.25L8.33333 9.58333L10 10.8333L11.6667 9.58333L16.25 6.25" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.5 5.83334C2.5 4.91667 3.25 4.16667 4.16667 4.16667H15.8333C16.75 4.16667 17.5 4.91667 17.5 5.83334V14.1667C17.5 15.0833 16.75 15.8333 15.8333 15.8333H4.16667C3.25 15.8333 2.5 15.0833 2.5 14.1667V5.83334Z" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <input 
+                        type="email" 
+                        id="emailInput"
+                        placeholder="Schedule a consultation with us"
+                        class="hero__form-input"
+                        required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    >
+                    <button type="submit" class="hero__form-button">GET STARTED</button>
+                </form>
             </div>
         </div>
     </section>
@@ -281,10 +288,10 @@
                     <div class="footer__links-group">
                         <h3 class="footer__links-title">Quick Links</h3>
                         <ul class="footer__links-list">
-                            <li><a href="/" class="footer__link">Home</a></li>
-                            <li><a href="/about.html" class="footer__link">About</a></li>
-                            <li><a href="/industries" class="footer__link">Industries</a></li>
-                            <li><a href="/contact" class="footer__link">Contact</a></li>
+                            <li><a href="index.html" class="footer__link">Home</a></li>
+                            <li><a href="about.html" class="footer__link">About</a></li>
+                            <li><a href="industries.html" class="footer__link">Industries</a></li>
+                            <li><a href="contact.html" class="footer__link">Contact</a></li>
                         </ul>
                     </div>
 
@@ -342,5 +349,15 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('emailInput').value;
+            if (email) {
+                window.location.href = `mailto:infokce@kczimengineering.com?subject=Consultation Request&body=Hello, I would like to schedule a consultation.%0D%0A%0D%0ARegards,%0D%0A${email}`;
+            }
+            return false;
+        }
+    </script>
 </body>
 </html> 
